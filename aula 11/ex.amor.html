@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor da sua vida</title>
+</head>
+<body>
+   <h1>Quem é o amor da sua vida?</h1>
+    <input type="name" id="amor">
+    <input type="button" value="verificar" onclick="Analyser()">
+    <div id="resu"></div>
+<script>
+    function Analyser() {
+        var name = window.document.getElementById('amor');
+        var res = window.document.getElementById('resu');
+
+        if(name.value.toLowerCase() !== 'matheus'){
+            res.innerText = 'não é o amor da sua vida';
+        } else {
+            res.innerText = 'Sim, ele é o amor da sua vidaaaaaaaaaa <3 <3 <3'
+        }
+    }
+
+</script>
+
+</body>
+</html>

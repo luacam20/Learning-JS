@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de estrangeiros</title>
+</head>
+<body>
+    <h1>Detector de estrangeiros</h1>
+    <span>País :</span>
+    <input type="name" id="pais">
+    <input type="button" value="verificar" onclick="Analyser()">
+    <div>Nacionalidade:</div>
+    <div id="res" class="res"></div>
+<script>
+    function Analyser() {
+        var local = window.document.getElementById('pais')
+        var res = window.document.getElementById('res');
+       
+        if(local.value !== 'Brasil') {
+            res.innerText = 'Estrangeiro'
+        } else {
+           res.innerText = 'Brasileiro' 
+        }
+    }
+    
+
+</script>
+</body>
+</html>
